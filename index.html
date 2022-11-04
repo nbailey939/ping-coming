@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <h1>We are launching <span>soon!</span></h1>
+      <h4>Subscribe and get notified</h4>
+      <div class="search">
+        <input
+          id="email"
+          type="text"
+          placeholder="        Your email address..."
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+          required
+          novalidate
+          oninput="validAte()"
+        />
+        <button>Notify Me</button>
+        <small id="error">Please provide a valid email address.</small>
+      </div>
+      <div class="dashboard">
+        <img src="./images/illustration-dashboard.png" alt="dashboard" />
+      </div>
+      <footer>
+        <div class="icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        &copy; Copyright Ping. All rights reserved.
+      </footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

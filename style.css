@@ -1,0 +1,265 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+
+  --fs-norm: 20px;
+}
+
+/*---------------  CSS Reset  -----------------*/
+/*---  https://piccalil.li/blog/a-modern-css-reset/  ---*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*----------------  End CSS Reset  -----------------*/
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: var(--fs-norm);
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  margin: 5.5rem auto 3rem auto;
+}
+h1 {
+  color: var(--gray);
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin: 0 auto;
+}
+span {
+  color: black;
+  font-weight: 600;
+}
+h4 {
+  font-size: 18px;
+  color: var(--dark-blue);
+  margin: 1.6rem auto 3rem auto;
+  font-weight: 100;
+}
+input {
+  display: block;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--pale-blue);
+  height: 3.5rem;
+  width: 22rem;
+  margin: 2rem auto 0.4rem auto;
+}
+input:focus {
+  border-color: none;
+  outline: none;
+}
+/*--- error message sytle ---*/
+small {
+  display: none;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+/*--- End Error message ---*/
+button {
+  display: block;
+  color: white;
+  background-color: var(--blue);
+  width: 22rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border-style: none;
+  margin: 0.7rem auto 0.5rem auto;
+  box-shadow: 0px 8px 15px var(--pale-blue);
+}
+input::placeholder {
+  color: var(--pale-blue);
+}
+.dashboard {
+  width: 360px;
+  margin: 1rem auto 1rem auto;
+}
+.icons {
+  display: flex;
+  color: var(--blue);
+  font-size: 40px;
+  padding: 0 2.5rem 0 2.5rem;
+  margin: 1rem auto 1rem auto;
+  width: 100%;
+  height: 55px;
+}
+.icons i {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+footer {
+  color: var(--gray);
+  font-weight: 100;
+  opacity: 0.5;
+  font-size: 15px;
+  margin: 2rem auto 2rem auto;
+}
+
+/*--- Media Queries Desktop ---*/
+@media only screen and (min-width: 768px) {
+  .search {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 130px;
+    margin: auto;
+  }
+  input {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--pale-blue);
+    height: 3rem;
+    width: 22rem;
+    margin: 2rem auto 0.4rem auto;
+  }
+  input:focus {
+    border-color: none;
+    outline: none;
+  }
+
+  button {
+    display: inline-block;
+    color: white;
+    background-color: var(--blue);
+    width: 10rem;
+    height: 3rem;
+    font-size: 18px;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    margin: 0.7rem auto 0.5rem 0.7rem;
+    box-shadow: 0px 8px 15px var(--pale-blue);
+  }
+  /*--- error message sytle ---*/
+  small {
+    display: none;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    font-weight: 500;
+    margin-left: 2rem;
+  }
+  /*--- End Error message ---*/
+
+  .dashboard {
+    width: 550px;
+    margin: 1rem auto 1rem auto;
+  }
+  .icons {
+    display: flex;
+    color: var(--blue);
+    font-size: 24px;
+    padding: 0 3rem 0 3rem;
+    margin: 1rem auto 1rem auto;
+    width: 100%;
+    height: 23px;
+  }
+  .icons i {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .icons i:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+  }
+  footer {
+    color: var(--gray);
+    font-weight: 100;
+    opacity: 0.5;
+    font-size: 13px;
+    margin: 2rem auto 2rem auto;
+  }
+}
