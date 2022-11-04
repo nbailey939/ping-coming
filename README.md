@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/nbailey939/ping-coming)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://nbailey939.github.io/ping-coming/)
 
 ## My process
 
@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Github](https://github.com/nbailey939)
+- Github - [Github](https://github.com/nbailey939)
 - Frontend Mentor - [@nbailey939](https://www.frontendmentor.io/profile/nbailey939)
 - Twitter - [@nbailey939](https://www.twitter.com/nbailey939)
