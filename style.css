@@ -112,7 +112,7 @@ span {
   color: black;
   font-weight: 600;
 }
-h4 {
+h2 {
   font-size: 18px;
   color: var(--dark-blue);
   margin: 1.6rem auto 3rem auto;
@@ -123,6 +123,7 @@ input {
   border-radius: 25px;
   border-style: solid;
   border-color: var(--pale-blue);
+  text-indent: 2rem;
   height: 3.5rem;
   width: 22rem;
   margin: 2rem auto 0.4rem auto;
@@ -147,7 +148,7 @@ button {
   background-color: var(--blue);
   width: 22rem;
   height: 3.5rem;
-  border-radius: 25px;
+  border-radius: 1.563rem;
   border-style: none;
   margin: 0.7rem auto 0.5rem auto;
   box-shadow: 0px 8px 15px var(--pale-blue);
@@ -162,11 +163,11 @@ input::placeholder {
 .icons {
   display: flex;
   color: var(--blue);
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 0 2.5rem 0 2.5rem;
   margin: 1rem auto 1rem auto;
   width: 100%;
-  height: 55px;
+  height: 3.438rem;
 }
 .icons i {
   display: flex;
@@ -187,8 +188,8 @@ footer {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 130px;
+    width: 34.375rem;
+    height: 8.125rem;
     margin: auto;
   }
   input {
@@ -260,6 +261,105 @@ footer {
     font-weight: 100;
     opacity: 0.5;
     font-size: 13px;
+    margin: 2rem auto 2rem auto;
+  }
+}
+
+/*----- Really Small Screens -----*/
+@media screen and (max-width: 364px) {
+  h1 {
+    color: var(--gray);
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 28px;
+    margin: 0 auto;
+  }
+  span {
+    color: black;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 1.4rem auto 2.6rem auto;
+    font-weight: 100;
+  }
+  .search {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 12.125rem;
+    margin: auto;
+  }
+  input {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--pale-blue);
+    height: 3rem;
+    width: 19rem;
+    margin: 2rem auto 0.4rem auto;
+  }
+  input:focus {
+    border-color: none;
+    outline: none;
+  }
+  /*--- error message sytle ---*/
+  small {
+    display: none;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    font-weight: 500;
+    margin-left: 2rem;
+  }
+  /*--- End Error message ---*/
+
+  button {
+    display: block;
+    color: white;
+    background-color: var(--blue);
+    width: 19rem;
+    height: 3rem;
+    font-size: 18px;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    margin: 0.7rem auto 0.5rem 0.7rem;
+    box-shadow: 0px 8px 15px var(--pale-blue);
+  }
+  .dashboard {
+    width: 300px;
+    margin: 1rem auto 1rem auto;
+  }
+  .icons {
+    display: flex;
+    color: var(--blue);
+    font-size: 24px;
+    padding: 0 3rem 0 3rem;
+    margin: 1rem auto 1rem auto;
+    width: 100%;
+    height: 25px;
+  }
+  .icons i {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .icons i:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+  }
+  footer {
+    color: var(--gray);
+    font-weight: 100;
+    opacity: 0.5;
+    font-size: 11px;
     margin: 2rem auto 2rem auto;
   }
 }
